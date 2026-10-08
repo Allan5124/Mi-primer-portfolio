@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de Allan Daniel — estudiante de Sistemas Microinformáticos y Redes, orientado a sistemas, redes y tecnología.">
+  <title>Allan Daniel | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#inicio" class="logo" aria-label="Inicio">AD<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#contacto" class="nav-cta">Contacto</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">☾</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow"><span class="status-dot"></span> Disponible para aprender y crecer</div>
+          <h1>Construyendo mi camino en <span>tecnología.</span></h1>
+          <p class="hero-role"><span id="typingText"></span><span class="cursor">|</span></p>
+          <p class="hero-description">
+            Soy estudiante de <strong>Sistemas Microinformáticos y Redes</strong>, interesado en sistemas,
+            redes, administración de servidores y desarrollo. Me gusta aprender haciendo y convertir
+            cada práctica en experiencia real.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos <span>↗</span></a>
+            <a href="#contacto" class="btn btn-secondary">Contactar</a>
+          </div>
+
+          <div class="hero-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Linux</span><span>Windows Server</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="terminal-card">
+            <div class="terminal-top">
+              <div class="terminal-dots"><i></i><i></i><i></i></div>
+              <span>allan@portfolio:~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="output">Allan Daniel</p>
+              <p><span class="prompt">$</span> cat perfil.txt</p>
+              <p class="output">SMR · Sistemas · Redes · Desarrollo</p>
+              <p><span class="prompt">$</span> python aprender.py</p>
+              <p class="output success">[OK] Aprendiendo paso a paso...</p>
+              <p><span class="prompt">$</span> <span class="blink">_</span></p>
+            </div>
+          </div>
+          <div class="floating-card card-one">⚙️ <span>SysAdmin</span></div>
+          <div class="floating-card card-two">🌐 <span>Networking</span></div>
+        </div>
+      </div>
+      <div class="scroll-hint">SCROLL <span>↓</span></div>
+    </section>
+
+    <section class="section about" id="sobre-mi">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">01</span>
+          <div>
+            <p class="section-label">CONÓCEME</p>
+            <h2>Sobre mí</h2>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="lead">
+              Estoy construyendo mi perfil profesional desde la base: entendiendo cómo funcionan
+              los equipos, los sistemas operativos y las redes para después aprender a administrarlos
+              y automatizarlos.
+            </p>
+            <p>
+              Actualmente estudio <strong>SMR</strong> y he trabajado en prácticas relacionadas con
+              Windows Server, Ubuntu Server, Linux, redes, DHCP, DNS, virtualización y Packet Tracer.
+              También estoy dando mis primeros pasos con <strong>Python</strong> y desarrollo web.
+            </p>
+            <p>
+              Mi forma de aprender es práctica: prefiero entender qué hace cada comando o línea de
+              código antes que limitarme a copiar una solución.
+            </p>
+
+            <div class="values">
+              <div><strong>01</strong><span>Aprendizaje continuo</span></div>
+              <div><strong>02</strong><span>Resolución de problemas</span></div>
+              <div><strong>03</strong><span>Trabajo práctico</span></div>
+            </div>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <span class="stat-icon">🖥️</span>
+              <strong>SMR</strong>
+              <span>Formación actual</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">🌐</span>
+              <strong>Redes</strong>
+              <span>DHCP · DNS · TCP/IP</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">⚡</span>
+              <strong>Servidores</strong>
+              <span>Windows · Linux</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-icon">🐍</span>
+              <strong>Python</strong>
+              <span>En aprendizaje</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="habilidades">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">02</span>
+          <div>
+            <p class="section-label">MI STACK</p>
+            <h2>Habilidades</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">🖥️</div>
+            <h3>Sistemas</h3>
+            <p>Instalación, configuración y mantenimiento de sistemas operativos y máquinas virtuales.</p>
+            <div class="tags"><span>Windows</span><span>Linux</span><span>Ubuntu Server</span><span>VirtualBox</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">🌐</div>
+            <h3>Redes</h3>
+            <p>Fundamentos de direccionamiento, servicios de red y diseño de pequeñas infraestructuras.</p>
+            <div class="tags"><span>TCP/IP</span><span>DHCP</span><span>DNS</span><span>Packet Tracer</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">⚙️</div>
+            <h3>Administración</h3>
+            <p>Primeros pasos en administración de servidores, configuración de red, firewall y servicios.</p>
+            <div class="tags"><span>PowerShell</span><span>SSH</span><span>Firewall</span><span>CLI</span></div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">💻</div>
+            <h3>Desarrollo</h3>
+            <p>Aprendizaje progresivo de programación y desarrollo web desde fundamentos básicos.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span></div>
+          </article>
+        </div>
+
+        <div class="learning-banner reveal">
+          <div>
+            <span class="mini-label">AHORA MISMO</span>
+            <h3>Aprendiendo Python desde cero</h3>
+            <p>Actualmente estoy reforzando lógica de programación mediante ejercicios pequeños y proyectos visuales con Turtle.</p>
+          </div>
+          <div class="learning-code"><span>print</span>(<span>"seguir aprendiendo"</span>)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="proyectos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">03</span>
+          <div>
+            <p class="section-label">LO QUE HE HECHO</p>
+            <h2>Proyectos y prácticas</h2>
+          </div>
+        </div>
+
+        <div class="project-filters reveal">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="sistemas">Sistemas</button>
+          <button class="filter" data-filter="redes">Redes</button>
+          <button class="filter" data-filter="desarrollo">Desarrollo</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-category="sistemas">
+            <div class="project-number">01</div>
+            <div class="project-icon">🪟</div>
+            <span class="project-type">SISTEMAS</span>
+            <h3>Windows Server 2022</h3>
+            <p>Instalación y configuración en Core y Desktop Experience, incluyendo red estática, PowerShell, firewall y administración básica.</p>
+            <div class="project-tags"><span>Windows Server</span><span>PowerShell</span><span>Core</span></div>
+          </article>
+
+          <article class="project-card reveal" data-category="sistemas">
+            <div class="project-number">02</div>
+            <div class="project-icon">🐧</div>
+            <span class="project-type">SISTEMAS</span>
+            <h3>Ubuntu Server</h3>
+            <p>Prácticas de instalación, configuración de red, acceso remoto mediante SSH y preparación de una infraestructura de servidor.</p>
+            <div class="project-tags"><span>Ubuntu</span><span>SSH</span><span>CLI</span></div>
+          </article>
+
+          <article class="project-card reveal" data-category="redes">
+            <div class="project-number">03</div>
+            <div class="project-icon">🌐</div>
+            <span class="project-type">REDES</span>
+            <h3>Servicios de red</h3>
+            <p>Diseño de una red para un centro educativo con direccionamiento privado, DHCP, DNS y servidor web interno.</p>
+            <div class="project-tags"><span>DHCP</span><span>DNS</span><span>Packet Tracer</span></div>
+          </article>
+
+          <article class="project-card reveal" data-category="redes">
+            <div class="project-number">04</div>
+            <div class="project-icon">🔌</div>
+            <span class="project-type">REDES</span>
+            <h3>Infraestructura de red</h3>
+            <p>Prácticas de cableado, direccionamiento IPv4, topologías y configuración de dispositivos de red en entornos simulados.</p>
+            <div class="project-tags"><span>IPv4</span><span>T568B</span><span>Switching</span></div>
+          </article>
+
+          <article class="project-card reveal" data-category="desarrollo">
+            <div class="project-number">05</div>
+            <div class="project-icon">🐍</div>
+            <span class="project-type">DESARROLLO</span>
+            <h3>Primeros proyectos en Python</h3>
+            <p>Ejercicios iniciales para comprender variables, salida por pantalla, lógica y animaciones sencillas con Turtle.</p>
+            <div class="project-tags"><span>Python</span><span>Turtle</span><span>Lógica</span></div>
+          </article>
+
+          <article class="project-card reveal" data-category="desarrollo">
+            <div class="project-number">06</div>
+            <div class="project-icon">☀️</div>
+            <span class="project-type">DESARROLLO WEB</span>
+            <h3>Experimentos HTML/CSS</h3>
+            <p>Creación de páginas web interactivas combinando estructura HTML, estilos CSS y comportamiento mediante JavaScript.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trajectory" id="trayectoria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">04</span>
+          <div>
+            <p class="section-label">MI CAMINO</p>
+            <h2>Trayectoria</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">ACTUALIDAD</div>
+            <div class="timeline-content">
+              <h3>Grado Medio en Sistemas Microinformáticos y Redes</h3>
+              <p>Formación en montaje y mantenimiento de equipos, sistemas operativos, redes locales, aplicaciones ofimáticas, digitalización y empleabilidad.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">PRÁCTICA</div>
+            <div class="timeline-content">
+              <h3>Laboratorios de sistemas y redes</h3>
+              <p>Trabajo con máquinas virtuales, Windows Server, Ubuntu Server, DHCP, DNS, Packet Tracer, configuración de red y resolución de incidencias.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">EN PROGRESO</div>
+            <div class="timeline-content">
+              <h3>Programación y desarrollo web</h3>
+              <p>Ampliando conocimientos en Python, HTML, CSS y JavaScript con proyectos pequeños que permiten aprender haciendo.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">OBJETIVO</div>
+            <div class="timeline-content">
+              <h3>Seguir creciendo en tecnología</h3>
+              <p>Desarrollar un perfil sólido en sistemas y redes, mientras exploro programación y el mundo del desarrollo de videojuegos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-copy">
+            <span class="section-label">05 · CONTACTO</span>
+            <h2>¿Hablamos?</h2>
+            <p>Estoy abierto a oportunidades de aprendizaje, proyectos y primeras experiencias profesionales relacionadas con tecnología.</p>
+            <div class="contact-note">Los datos de contacto se pueden añadir aquí cuando quieras publicar el portfolio.</div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="contact-link" href="#inicio">
+              <span>↑</span>
+              <div><small>VOLVER ARRIBA</small><strong>Inicio</strong></div>
+            </a>
+            <button class="contact-link copy-btn" id="copyProfile" type="button">
+              <span>⌘</span>
+              <div><small>PORTFOLIO</small><strong>Copiar nombre</strong></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Allan Daniel</span>
+      <span>Hecho con HTML · CSS · JavaScript</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Nombre copiado</div>
+  <script src="script.js"></script>
+</body>
+</html>
